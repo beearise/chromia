@@ -238,6 +238,25 @@
     </script>
   </head>
 
+    {% if template.name == 'index' %}
+  <style>
+  .header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .header__menu-item, .header__active-menu-item, .header__icon .icon {
+      color:#fff
+  }
+
+  .header__menu-item:hover{
+      color:#fff;
+  }
+
+  </style>
+  {% endif %}
+
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
